@@ -1,0 +1,16 @@
+def sum_n_numbers(n):
+    if n == 0:
+        return 0  # Base case: sum of 0 numbers is 0
+    return n + sum_n_numbers(n - 1)  # Recursive case
+n = 5
+print("Sum:", sum_n_numbers(n))
+
+OUTPUT:
+Sum: 15
+
+sum_n_numbers(5) = 5 + sum_n_numbers(4)
+sum_n_numbers(4) = 4 + sum_n_numbers(3)
+sum_n_numbers(3) = 3 + sum_n_numbers(2)
+sum_n_numbers(2) = 2 + sum_n_numbers(1)
+sum_n_numbers(1) = 1 + sum_n_numbers(0)
+sum_n_numbers(0) = 0 (Base case)
