@@ -1,0 +1,14 @@
+def print_n_to_1(n):
+    if n == 0:
+        return  # Base case: stop when n reaches 0
+    print(n)
+    print_n_to_1(n - 1)  # Recursive call with n-1
+n = 5
+print_n_to_1(n)
+
+OutPUT:
+5
+4
+3
+2
+1
